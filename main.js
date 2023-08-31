@@ -9,12 +9,13 @@ const catalogo = [
 { id: 8, marca: 'Zara', nome: 'Colete Comprido com Cinto', preco: 88, imagem: 'product-8.jpg', feminino: true, }]
 
 for(const produtoCatalago of catalogo){
-     const cartaProduto = `<div class="card-produto">
+     const cartaProduto = `<div class="border-solid border-2 border-sky-500 w-48 m-2  "
+    id="card-produto-${produtoCatalago.id}">
     <img src="assert/img/${produtoCatalago.imagem} " style="height:250px"> 
     <p>${produtoCatalago.marca}</p>
     <p>${produtoCatalago.nome}</p>
     <p>$${produtoCatalago.preco}</p>
-    <button>Adicionar</button>
+    <button >Adicionar</button>
     </div>
     `
     document.getElementById("conteiner-produto").innerHTML += cartaProduto;
